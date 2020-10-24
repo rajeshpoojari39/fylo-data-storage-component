@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+body{
+    background-color:  hsl(229, 57%, 11%);
+}
+
+#image-design{
+    padding-top: 250px;
+}
+
+
+
+.storage-div{
+    background-color: hsl(228, 56%, 26%);
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    position: absolute;
+    top: 220px;
+    right: 250px;
+
+    
+}
+
+.storage-info{
+    color:  hsl(243, 100%, 93%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    padding-left: 32px;
+    padding-top: 20px;
+}
+
+.logo-div{
+    background-color: hsl(228, 56%, 26%);
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 100px 10px 10px;
+    position: absolute;
+    top: 170px;
+    left: 250px;
+}
+
+.logo-div .logo-image{
+    
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.features{
+    background-color: hsl(229, 57%, 11%);
+    position: relative;
+    left: 30px;
+    top: 30px;
+    border-radius: 10px;
+}
+
+.document{
+    padding: .6em .7em;
+}
+
+.folder{
+    padding: .7em;
+    margin-left: 10px;
+}
+
+.upload{
+    padding: .8em;
+    margin-left: 10px;
+}
+
+.progress-bar{
+    width: 420px;
+    height:15px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    position: relative;
+    top: 3px;
+    left: 30px;
+    border: 1px solid hsl(229, 57%, 11%);
+    display: flex;
+    align-items: center;
+    padding: 1px;
+}
+
+.progress-complete{
+    width:320px;
+    height: 14px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.progress-point{
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.storage-start{
+    
+    color: hsl(243, 100%, 93%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    padding-top: 10px;
+    margin-left: 30px;
+    
+        
+}
+
+.storage-end{
+    position: absolute;
+    color: hsl(243, 100%, 93%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    margin-left: 409px;
+    top: 94px;
+    
+}
+
+.bubble{
+    background-color: white;
+    align-items: center;
+    border-radius: 10px 10px 0px 10px;
+    height: 70px;
+    width: 150px;
+    position: absolute;
+    top: -45px;
+    left: 300px;    
+    
+}
+
+.bubble-num{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+.bubble-text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    color: rgb(65, 63, 63);
+    position: relative;
+    top: -75px;
+    left: 85px;
+    letter-spacing: 2px;
+
+
+}
+
+.bubble-triangle{
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid white;
+  border-left: 20px solid transparent;
+}
+
+.attribution{
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1356px){
+    .storage-div{
+        top:400px;
+        left:200px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .storage-div{
+        top:400px;
+        left:150px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .storage-div{
+        top:400px;
+        left:100px;
+    }
+
+    .logo-div{
+        left: 190px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .storage-div{
+        top:450px;
+        left:80px;
+    }
+
+    .logo-div{
+        left: 170px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .storage-div{
+        top:450px;
+        left:50px;
+        width:450px;
+    }
+
+    .progress-bar{
+        width: 380px;
+    }
+
+    .bubble{
+        left: 260px;
+    }
+
+    .storage-end{
+        margin-left: 370px;
+    }
+
+    .logo-div{
+        left: 140px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .storage-div{
+        width:400px;
+        top: 400px;
+    }
+
+    .progress-bar{
+        width: 330px;
+    }
+
+    .progress-complete{
+        width: 280px;
+    }
+
+    .storage-end{
+        margin-left: 320px;
+    }
+
+    .bubble{
+        top: 115px;
+        left: 125px;
+        border-radius: 10px;
+    }
+
+    .bubble-triangle{
+        z-index: -1;
+    }
+
+    .logo-div{
+        left: 100px;
+    }
+
+   
+    
+}
+
+@media screen and (max-width: 480px){
+
+    #image-design{
+        display: none;
+    }
+
+    body{
+        background-color: transparent;
+        background: url("images/bg-mobile.png");
+        background-repeat: no-repeat;
+    }
+    
+    .attribution{
+        position: absolute;
+        bottom: 0px;
+        font-size: 11px; 
+        text-align: center;
+        color: hsl(228, 45%, 44%);
+    }
+
+    .logo-div{
+        left: 40px;
+    }
+
+    .storage-div{
+        left: 40px;
+        width: 300px;
+    }
+
+    .progress-bar{
+        width: 240px;
+    }
+
+    .progress-complete{
+        width: 180px;
+    }
+
+    .storage-end{
+        margin-left: 230px;
+    }
+
+    .bubble{
+        left: 70px;
+        border-radius: 10px;
+    }
+
+    .bubble-triangle{
+        display: none;
+    }
+
+
+
+}
+
+
